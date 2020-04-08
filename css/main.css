@@ -142,25 +142,7 @@ header div#content{
 	margin-top: 18vh;
 }
 
-@media(max-height:500px){
-	header div#content{
-		margin-top: 4vh;
-	}
 
-	header div#content h2{
-		font-size: 6vw;
-	}
-
-	header div#content button{
-		width: 200px;
-		height: 50px;
-
-		margin-top: 30px;
-		margin-bottom: 30px;
-
-		font-size: 13px;
-	}
-}
 
 header div#content h2{
 	font-size: 8vw ;
@@ -497,3 +479,24 @@ footer div nav ul li + li + li a i:hover{ /* instagram */
 }
 
 /*=================== FIM FOOTER ====================*/
+
+
+@media(max-height:500px){
+	header div#content{
+		margin-top: 4vh;
+	}
+
+	header div#content h2{
+		font-size: 6vw;
+	}
+
+	header div#content button{
+		width: 200px;
+		height: 50px;
+
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		font-size: 13px;
+	}
+}
