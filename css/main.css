@@ -1,0 +1,473 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*==================== GLOBAIS ======================*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+	background: #f2f2f2;
+}
+
+h1{
+	display: none;
+}
+
+ul{
+	display: flex;
+	padding: 0;
+	list-style: none;
+}
+
+ul li a{
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*-------------------- CONTAINER ------------------*/
+
+	.container{
+		margin: 0 6vw;
+	}
+
+	@media (min-width: 600px) and (max-width:720px) {
+		.container{
+			margin: 0 9vw;
+		}
+	}
+
+	@media (min-width: 850px) and (max-width:1000px) {
+		.container{
+			margin: 0 8vw;
+		}
+	}
+
+	@media (min-width: 1250px) {
+		.container{
+			margin: 0 14.2vw;
+		}
+	}
+
+/*------------------ FIM CONTAINER ----------------*/
+
+/*==================== FIM GLOBAIS ==================*/
+
+/*====================== HEADER =====================*/
+
+header{
+	padding-top: 20px;
+
+	height: 90vh;
+
+	background: url(../img/capa-madmax2.jpg) center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header:after{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+
+	content: "";
+	height: 90vh;
+	width: 100%;
+
+	background: linear-gradient( 0deg,
+	rgba(0, 0, 0, 0.6) 0%,
+	rgba(0, 212, 255, 0)75% );
+}
+
+/*============ PARTE SUPERIOR DO HEADER =============*/
+
+header div#higher {
+	position: relative;
+	z-index: 2;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div#higher ul{
+	display: none;
+	justify-content: space-between;
+	width: 350px;
+}
+
+	@media (min-width:800px){
+		header div#higher ul{
+			display: flex;
+		}
+	}
+
+header div#higher ul li a,
+header div#higher div#user span{
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+}
+
+header div#higher ul li a:hover{
+	color: #e4bb23;
+}
+
+header div#higher div#user {
+	display: flex;
+	align-items: center;
+}
+
+header div#higher div#user img{
+	width: 45px;
+	border-radius: 100%;
+
+	margin-right: 15px;
+}
+
+/*============ FIM PARTE SUPERIOR HEADER ============*/
+
+/*================== HEADER CONTENT =================*/
+
+header div#content{
+	position: relative;
+	z-index: 1;
+}
+
+header div#content h2{
+	font-size: 8vw;
+	color: white;
+	margin: 120px 0 15px 0;
+}
+
+	@media (min-width:550px){
+		header div#content h2{
+			font-size: 6vw;
+		}
+	}
+
+	@media (min-width:1000px){
+		header div#content h2{
+			font-size: 5vw;
+		}
+	}
+
+header div#content div#type{
+	display: flex;
+	justify-content: space-between;
+	width: 200px
+}
+
+header div#content div#type a{
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+}
+
+header div#content div#type a:hover{
+	cursor: pointer;
+	color: #e4bb23;
+}
+
+header div#content button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: #e4bb23;
+	width: 150px;
+	height: 40px;
+
+	border: none;
+	border-radius: 50px;
+	outline: none;
+
+	font-size: 11px;
+	font-weight: 550;
+	color: #0f0e0e;
+
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+	@media (min-width: 600px){
+
+		header div#content button{
+			width: 200px;
+			height: 50px;
+
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			font-size: 13px;
+		}
+
+	}
+
+header div#content button:hover{
+	background: #bc9a1d;
+	transition: 0.1s;
+}
+
+header div#content button:active {
+	opacity: 50%;
+	transition: 0.1s;
+}
+
+header div#content button i{
+	font-size: 2em;
+	margin-left: 10px;
+}
+
+header div#content div#cinema {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+header div#content div#cinema span{
+	color: white;
+}
+
+header div#content div#cinema span + span{
+	margin-top: 15px;
+	color: #e4bb23;
+}
+/*================= FIM HEADER CONTENT ==============*/
+/*==================== FIM HEADER ===================*/
+
+/*===================== MAIN ========================*/
+/*=================== MAIN NAV ======================*/
+main nav{
+	display: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	justify-content: center;
+	height: 10vh;
+}
+
+	@media(min-width:550px){
+		main nav{
+			display: flex;
+		}
+	}
+
+main nav ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0%;
+}
+
+	@media(min-width:920px){
+		main nav ul {
+			margin: 0 20%;
+		}
+	}
+
+main nav ul li {
+	height: 10vh;
+	display: flex;
+	align-items:center;
+}
+
+main nav ul li:hover {
+	border-bottom: 1px solid #e4bb23;
+}
+
+main nav ul li a{
+	color: #e4bb23;
+}
+/*================== FIM MAIN NAV ===================*/
+
+/*=================== MAIN MOVIES ===================*/
+
+main ul#movies{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 50px;
+	grid-column-gap: 15px;
+}/* 950 4 vira  */
+
+/*------------------------ GRIDS --------------------*/
+
+	@media (min-width: 450px) {
+		main ul#movies{
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 720px) {
+		main ul#movies{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 1000px) {
+		main ul#movies{
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+/*-------------------- FIM GRIDS --------------------*/
+
+main ul#movies li.filme{
+	width: 100%;
+	height: 400px;
+}
+
+/*---------------------- FIGURE ---------------------*/
+
+main ul#movies li.filme figure{
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height: 80%;
+	width: 100%;
+
+	padding: 0;
+	margin: 0 ;
+}
+
+main ul#movies li.filme figure img{
+	border-radius: 10px 10px 0 0;
+	height: 100%;
+	width: 100%;
+}
+
+main ul#movies li.filme figure div.start-movie{
+	position: relative;
+	top: -322px;
+	
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px 10px 0 0;
+	height: 100%;
+	opacity: 0%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main ul#movies li.filme figure div.start-movie:hover{
+	opacity: 100%;
+	transition: 0.4s;
+}
+
+main ul#movies li.filme figure div.start-movie h2{
+	font-size: 20px;
+	text-align: center;
+	color: #e4bb23;
+	margin: 0 auto;
+}
+
+main ul#movies li.filme figure div.start-movie button {
+	margin-top: 15px;
+	background: transparent;
+	border: none;
+
+	font-size: 45px;
+	color: white;
+	outline: none;
+}
+
+main ul#movies li.filme figure div.start-movie button:hover{
+	color: #e4bb23
+}
+
+/*-------------------- FIM FIGURE -------------------*/
+
+/*------------------- INFORMATIONS ------------------*/
+
+main ul#movies li.filme div.informations{
+	margin: 0;
+	background: white;
+	border-radius: 0 0 10px 10px;
+	padding: 10px;
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main ul#movies li.filme div.informations h2{
+	margin: 0;
+	font-size: 13px;
+}
+
+main ul#movies li.filme div.informations a{
+	color: #e4bb23;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+main ul#movies li.filme div.informations a:hover{
+	border-bottom: 1px solid #e4bb23;
+}
+
+main ul#movies li.filme div.informations span{
+	display: flex;
+	justify-content: space-between;
+	
+	font-size: 20px;
+	font-weight: bold;
+}
+
+main ul#movies li.filme div.informations span i{
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #ccc;
+}
+
+main ul#movies li.filme div.informations span i:hover{
+	color: #e74c3c;
+}
+
+/*----------------- FIM INFORMATIONS ----------------*/
+
+/*==================== FIM MAIN =====================*/
+
+/*===================== FOOTER ======================*/
+footer div,
+footer div nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+footer{
+	margin-top: 60px;
+	background: white;
+	padding: 30px 0 25px 0;
+}
+
+footer div{
+	padding: 0;
+	margin: 0;
+}
+
+footer div nav ul{
+	width: 140px;
+	margin: 8px 0;
+}
+
+footer div nav ul li a{
+	font-size: 2.5em;
+	color: #bababa;
+}
+
+footer div nav ul li a i:hover{ /* twitter */
+	color: #55acee;
+}
+
+footer div nav ul li + li a i:hover{ /* facebook */
+	color: #3b5998;
+}
+
+footer div nav ul li + li + li a i:hover{ /* instagram */
+	color: #e95950;
+}
+
+/*=================== FIM FOOTER ====================*/
