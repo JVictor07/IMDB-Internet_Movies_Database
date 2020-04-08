@@ -146,6 +146,20 @@ header div#content{
 	header div#content{
 		margin-top: 4vh;
 	}
+
+	header div#content h2{
+		font-size: 6vw;
+	}
+
+	header div#content button{
+		width: 200px;
+		height: 50px;
+
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		font-size: 13px;
+	}
 }
 
 header div#content h2{
