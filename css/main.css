@@ -135,14 +135,12 @@ header div#higher div#user img{
 header{
 	display: block;
 }
+
 header div#content{
 	position: relative;
 	z-index: 1;
-	border: 1px solid red;
 	margin-top: 18vh;
 }
-
-
 
 header div#content h2{
 	font-size: 8vw ;
@@ -483,20 +481,20 @@ footer div nav ul li + li + li a i:hover{ /* instagram */
 
 @media(max-height:500px){
 	header div#content{
-		margin-top: 4vh;
+		margin-top: 4vh !important; 
 	}
 
 	header div#content h2{
-		font-size: 6vw;
+		font-size: 6vw !important;
 	}
 
 	header div#content button{
-		width: 200px;
-		height: 50px;
+		width: 200px !important;
+		height: 50px !important;
 
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 30px !important;
+		margin-bottom: 30px !important;
 
-		font-size: 13px;
+		font-size: 13px !important;
 	}
 }
