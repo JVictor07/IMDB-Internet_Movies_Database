@@ -481,8 +481,7 @@ footer div nav ul li + li + li a i:hover{ /* instagram */
 
 @media(max-height:500px){
 	header div#content{
-		margin-top: 4vh !important;
-		border: 1px solid red
+		margin-top: 4vh !important; 
 	}
 
 	header div#content h2{
@@ -490,12 +489,12 @@ footer div nav ul li + li + li a i:hover{ /* instagram */
 	}
 
 	header div#content button{
-		width: 200px !important;
-		height: 50px !important;
 
-		margin-top: 30px !important;
-		margin-bottom: 30px !important;
+		font-size: 11px;
+		width: 150px;
+		height: 40px;
+		margin-top:20px;
+		margin-bottom: 20px;
 
-		font-size: 13px !important;
 	}
 }
