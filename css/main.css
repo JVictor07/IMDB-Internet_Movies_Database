@@ -132,6 +132,7 @@ header div#higher div#user img{
 /*============ FIM PARTE SUPERIOR HEADER ============*/
 
 /*================== HEADER CONTENT =================*/
+
 header{
 	display: block;
 }
@@ -243,6 +244,41 @@ header div#content div#cinema span + span{
 	margin-top: 15px;
 	color: #e4bb23;
 }
+
+@media(max-height:500px) {
+
+	header div#content{
+		margin-top: 5vh !important;
+	}
+
+	header div#content h2{
+		font-size: 42px !important;
+	}
+
+	header div#content button{
+
+		font-size: 11px;
+		width: 150px;
+		height: 35px;
+		margin-top:18px;
+		margin-bottom: 18px;
+
+	}
+
+}
+
+@media(max-height:500px) and (max-width:500px){
+
+	header div#content{
+		margin-top: 10vh !important;
+	}
+
+	header div#content h2{
+		font-size: 24px !important;
+	}
+
+}
+
 /*================= FIM HEADER CONTENT ==============*/
 /*==================== FIM HEADER ===================*/
 
@@ -477,38 +513,3 @@ footer div nav ul li + li + li a i:hover{ /* instagram */
 }
 
 /*=================== FIM FOOTER ====================*/
-
-
-
-
-@media(max-height:500px) {
-	header div#content{
-		margin-top: 5vh !important;
-	}
-
-	header div#content h2{
-		font-size: 42px !important;
-	}
-
-	header div#content button{
-
-		font-size: 11px;
-		width: 150px;
-		height: 35px;
-		margin-top:18px;
-		margin-bottom: 18px;
-
-	}
-}
-
-@media(max-height:500px) and (max-width:500px){
-
-	header div#content{
-		margin-top: 10vh !important;
-	}
-
-	header div#content h2{
-		font-size: 24px !important;
-	}
-
-}
